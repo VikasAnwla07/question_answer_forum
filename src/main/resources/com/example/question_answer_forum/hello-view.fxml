@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<?import com.gluonhq.charm.glisten.control.TextField?>-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #e4c513;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.question_answer_forum.HelloController">
+    <left>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+    </left>
+    <right>
+        <AnchorPane prefHeight="400.0" prefWidth="465.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="67.0" layoutY="151.0" text="USERNAME" textFill="#181612">
+                    <font>
+                        <Font name="Broadway" size="20.0" />
+                    </font>
+                </Label>
+                <Label layoutX="172.0" layoutY="37.0" text="LOGIN">
+                    <font>
+                        <Font size="19.0" />
+                    </font>
+                </Label>
+                <Label fx:id="label_message" layoutX="158.0" layoutY="99.0" />
+                <Label layoutX="71.0" layoutY="343.0" text="NOT REGISTERED SIGNUP" />
+                <Label layoutX="67.0" layoutY="211.0" text="PASSWORD">
+                    <font>
+                        <Font name="Broadway" size="20.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="temp_username" layoutX="221.0" layoutY="150.0" promptText="username" style="-fx-background-color: #faf9f7;" />
+                <Button fx:id="button_login" layoutX="162.0" layoutY="268.0" mnemonicParsing="false" text="LOGIN" textFill="#2e0707" />
+                <Button fx:id="button_signup" layoutX="252.0" layoutY="337.0" mnemonicParsing="false" text="SIGNUP" />
+                <PasswordField fx:id="temp_password" layoutX="221.0" layoutY="210.0" promptText="password" style="-fx-background-color: #faf9f7;" />
+            </children>
+        </AnchorPane>
+    </right>
+</BorderPane>
